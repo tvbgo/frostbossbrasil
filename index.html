@@ -32,6 +32,31 @@
     .whatsapp-button i {
       font-size: 30px;
     }
+
+    .vcard-link {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    .vcard-link:hover {
+      background-color: #0056b3;
+    }
+
+    .vcard-link i {
+      font-size: 30px;
+    }
   </style>
 </head>
 <body>
@@ -161,8 +186,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-     <a href="https://api.whatsapp.com/send?phone=5521993857200" class="whatsapp-button" target="_blank">
+  <!-- WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=5521993857200" class="whatsapp-button" target="_blank">
     <i class="fab fa-whatsapp"></i>
+  </a>
+  <!-- vCard Link Button -->
+  <a href="https://frostboss.com.br/contato.vcf" class="vcard-link" target="_blank" download>
+    <i class="fas fa-address-book"></i>
   </a>
 </body>
 </html>
